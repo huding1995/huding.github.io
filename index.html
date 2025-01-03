@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="小胡爱读书 - 与书为伴，与智慧同行">
+    <meta property="og:description" content="这里是小胡的读书角落，记录阅读心得，分享知识见解">
+    <meta property="og:image" content="https://你的图片地址.jpg">
+    <meta property="og:url" content="https://www.xiaohureading.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                小胡爱读书
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">书房首页</a></li>
+                <li><a href="#articles">读书笔记</a></li>
+                <li><a href="#about">关于小胡</a></li>
+                <li><a href="#contact">交流互动</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>与书为伴，与智慧同行</h1>
+                <p class="hero-text">这里是小胡的读书角落，记录阅读心得，分享知识见解</p>
+                <a href="#articles" class="cta-button">浏览笔记</a>
+            </div>
+        </section>
+
+        <section class="articles container">
+            <article class="post">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="读书场景">
+                </div>
+                <div class="post-content">
+                    <h2>《百年孤独》读后感</h2>
+                    <div class="post-meta">
+                        <span class="date">2024年3月21日</span>
+                        <span class="author">小胡的书评</span>
+                        <span class="category">文学经典</span>
+                    </div>
+                    <p class="excerpt">马尔克斯的魔幻现实主义巅峰之作，一个家族七代人的故事，展现了拉美大陆的历史变迁...</p>
+                    <a href="#" class="read-more">继续阅读 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="book-recommendations container">
+            <h2 class="section-title">更多好书推荐</h2>
+            
+            <div class="book-filters">
+                <button class="filter-btn active" data-category="all">全部</button>
+                <button class="filter-btn" data-category="literature">文学经典</button>
+                <button class="filter-btn" data-category="psychology">心理成长</button>
+                <button class="filter-btn" data-category="philosophy">哲学思考</button>
+                <button class="filter-btn" data-category="history">历史文化</button>
+            </div>
+
+            <div class="books-grid">
+                <!-- 第一行书籍 -->
+                <div class="books-row active" data-page="1">
+                    <article class="book-card" data-category="literature">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="活着">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.4</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">经典必读</div>
+                            <h3>活着</h3>
+                            <p class="author">余华</p>
+                            <p class="brief">一部描写人生的史诗，讲述了一个人历经世间沧桑后依然热爱生活的故事。</p>
+                            <div class="tags">
+                                <span>当代文学</span>
+                                <span>生命力作</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="literature">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="百年孤独">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.6</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">诺贝尔文学奖</div>
+                            <h3>百年孤独</h3>
+                            <p class="author">加西亚·马尔克斯</p>
+                            <p class="brief">一部穿越百年的魔幻史诗，讲述布恩迪亚家族七代人的故事。</p>
+                            <div class="tags">
+                                <span>魔幻现实</span>
+                                <span>世界名著</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="psychology">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="自我与本我">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.2</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">心理学经典</div>
+                            <h3>自我与本我</h3>
+                            <p class="author">弗洛伊德</p>
+                            <p class="brief">探索人类心理深处的经典之作，揭示潜意识对人类行为的影响。</p>
+                            <div class="tags">
+                                <span>心理学</span>
+                                <span>经典著作</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 第二行书籍 -->
+                <div class="books-row" data-page="2">
+                    <article class="book-card" data-category="philosophy">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1533669955142-6a73332af4db?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="苏格拉底的申辩">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.5</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">哲学入门</div>
+                            <h3>苏格拉底的申辩</h3>
+                            <p class="author">柏拉图</p>
+                            <p class="brief">记录了苏格拉底在雅典法庭上的辩护演说，展现了哲学家的智慧与勇气。</p>
+                            <div class="tags">
+                                <span>哲学</span>
+                                <span>古希腊</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="history">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1447023029226-ef8f6b52e3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="人类简史">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.3</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">全球畅销</div>
+                            <h3>人类简史</h3>
+                            <p class="author">尤瓦尔·赫拉利</p>
+                            <p class="brief">从认知革命到人工智能时代，重新审视人类历史的演变。</p>
+                            <div class="tags">
+                                <span>历史</span>
+                                <span>人类文明</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="literature">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1495640388908-05fa85288e61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="1984">
+                            <div class="book-overlay">
+                                <span class="rating">⭐ 9.7</span>
+                                <button class="add-to-list">加入书单</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-badge">反乌托邦</div>
+                            <h3>1984</h3>
+                            <p class="author">乔治·奥威尔</p>
+                            <p class="brief">一部预言性的政治寓言小说，描绘了极权主义社会的黑暗图景。</p>
+                            <div class="tags">
+                                <span>经典名著</span>
+                                <span>政治寓言</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 分页控制 -->
+            <div class="pagination">
+                <button class="page-btn active" data-page="1">1</button>
+                <button class="page-btn" data-page="2">2</button>
+            </div>
+        </section>
+
+        <section class="comments container">
+            <h2 class="section-title">读者交流</h2>
+            <div class="comment-form">
+                <div class="user-info">
+                    <input type="text" id="userName" placeholder="你的昵称" required>
+                    <input type="email" id="userEmail" placeholder="邮箱（不会公开）" required>
+                </div>
+                <textarea 
+                    id="commentContent" 
+                    placeholder="分享你的读书感悟..." 
+                    rows="4"></textarea>
+                <div class="form-footer">
+                    <div class="emoji-picker">
+                        <button onclick="toggleEmoji()">😊 表情</button>
+                        <div class="emoji-panel" id="emojiPanel">
+                            <span onclick="addEmoji('😊')">😊</span>
+                            <span onclick="addEmoji('📚')">📚</span>
+                            <span onclick="addEmoji('💡')">💡</span>
+                            <span onclick="addEmoji('❤️')">❤️</span>
+                            <span onclick="addEmoji('👍')">👍</span>
+                        </div>
+                    </div>
+                    <button onclick="submitComment()" class="submit-btn">发表评论</button>
+                </div>
+            </div>
+            
+            <div class="comments-list" id="commentsList">
+                <!-- 示例评论 -->
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">书虫一枚</span>
+                        <span class="comment-date">2024-03-21</span>
+                    </div>
+                    <div class="comment-content">
+                        马尔克斯的作品总是让人着迷，时间的魔力在他的笔下显得如此神奇。📚
+                    </div>
+                    <div class="comment-actions">
+                        <button onclick="likeComment(this)">
+                            <span class="like-icon">👍</span>
+                            <span class="like-count">3</span>
+                        </button>
+                        <button onclick="replyComment(this)">回复</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于小胡爱读书</h3>
+                    <p>一个分享阅读心得、探讨人生智慧的温暖角落。在这里，让我们一起遇见更好的自己。</p>
+                    <div class="social-links">
+                        <a href="#" title="微信"><span class="social-icon">📱</span></a>
+                        <a href="#" title="微博"><span class="social-icon">🌏</span></a>
+                        <a href="#" title="知乎"><span class="social-icon">📘</span></a>
+                        <a href="#" title="豆瓣"><span class="social-icon">📚</span></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">书房首页</a></li>
+                        <li><a href="#articles">读书笔记</a></li>
+                        <li><a href="#about">关于小胡</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>热门分类</h3>
+                    <ul class="footer-links">
+                        <li><a href="#literature">文学经典</a></li>
+                        <li><a href="#psychology">心理成长</a></li>
+                        <li><a href="#philosophy">哲学思考</a></li>
+                        <li><a href="#history">历史文化</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>订阅更新</h3>
+                    <p>订阅我们的阅读周刊，获取最新读书推荐和心得分享。</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="请输入您的邮箱" required>
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 小胡爱读书. 保留所有权利。</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">隐私政策</a>
+                    <a href="#terms">使用条款</a>
+                    <a href="#sitemap">网站地图</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="share-buttons">
+        <button onclick="shareToWeChat()">分享到微信</button>
+        <button onclick="shareToWeibo()">分享到微博</button>
+        <button onclick="copyLink()">复制链接</button>
+    </div>
+
+    <div class="ai-chat-widget">
+        <button class="ai-chat-toggle" onclick="toggleChat()">
+            <span class="ai-icon">🤖</span>
+            <span class="ai-label">读书助手</span>
+        </button>
+        
+        <div class="ai-chat-container" id="aiChatContainer">
+            <div class="ai-chat-header">
+                <h3>AI 读书助手</h3>
+                <button class="close-btn" onclick="toggleChat()">×</button>
+            </div>
+            
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-message">
+                    <span class="ai-avatar">🤖</span>
+                    <div class="message-content">
+                        你好！我是你的读书助手，可以和你讨论任何关于书籍的话题。
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-chat-input">
+                <textarea 
+                    id="userInput" 
+                    placeholder="输入你的问题..." 
+                    rows="1" 
+                    onkeypress="handleKeyPress(event)"></textarea>
+                <button onclick="sendMessage()">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => alert('链接已复制到剪贴板！'));
+    }
+
+    function shareToWeChat() {
+        // 显示二维码
+        alert('请截图或扫描二维码分享');
+    }
+
+    function shareToWeibo() {
+        const text = '推荐一个很棒的读书博客：小胡爱读书 ' + window.location.href;
+        window.open(`http://service.weibo.com/share/share.php?url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(text)}`);
+    }
+
+    // AI 对话框功能
+    function toggleChat() {
+        const container = document.getElementById('aiChatContainer');
+        container.classList.toggle('active');
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            sendMessage();
+        }
+    }
+
+    function sendMessage() {
+        const input = document.getElementById('userInput');
+        const messages = document.getElementById('aiChatMessages');
+        const userMessage = input.value.trim();
+        
+        if (!userMessage) return;
+        
+        // 添加用户消息
+        messages.innerHTML += `
+            <div class="user-message">
+                <div class="message-content">${userMessage}</div>
+                <span class="user-avatar">👤</span>
+            </div>
+        `;
+        
+        // 模拟 AI 回复
+        setTimeout(() => {
+            messages.innerHTML += `
+                <div class="ai-message">
+                    <span class="ai-avatar">🤖</span>
+                    <div class="message-content">
+                        我很理解你对"${userMessage}"的想法。让我们一起深入探讨这个话题吧！
+                    </div>
+                </div>
+            `;
+            messages.scrollTop = messages.scrollHeight;
+        }, 1000);
+        
+        input.value = '';
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    // 自动调整文本框高度
+    const textarea = document.getElementById('userInput');
+    textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+
+    // 评论功能
+    function toggleEmoji() {
+        const panel = document.getElementById('emojiPanel');
+        panel.classList.toggle('active');
+    }
+
+    function addEmoji(emoji) {
+        const textarea = document.getElementById('commentContent');
+        textarea.value += emoji;
+        document.getElementById('emojiPanel').classList.remove('active');
+    }
+
+    function submitComment() {
+        const name = document.getElementById('userName').value;
+        const content = document.getElementById('commentContent').value;
+        
+        if (!name || !content) {
+            alert('请填写昵称和评论内容');
+            return;
+        }
+        
+        const commentsList = document.getElementById('commentsList');
+        const date = new Date().toLocaleDateString();
+        
+        const newComment = `
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">${name}</span>
+                    <span class="comment-date">${date}</span>
+                </div>
+                <div class="comment-content">
+                    ${content}
+                </div>
+                <div class="comment-actions">
+                    <button onclick="likeComment(this)">
+                        <span class="like-icon">👍</span>
+                        <span class="like-count">0</span>
+                    </button>
+                    <button onclick="replyComment(this)">回复</button>
+                </div>
+            </div>
+        `;
+        
+        commentsList.insertAdjacentHTML('afterbegin', newComment);
+        
+        // 清空输入框
+        document.getElementById('userName').value = '';
+        document.getElementById('commentContent').value = '';
+    }
+
+    function likeComment(button) {
+        const countSpan = button.querySelector('.like-count');
+        let count = parseInt(countSpan.textContent);
+        countSpan.textContent = count + 1;
+        button.classList.add('liked');
+    }
+
+    function replyComment(button) {
+        const comment = button.closest('.comment');
+        const author = comment.querySelector('.comment-author').textContent;
+        const textarea = document.getElementById('commentContent');
+        textarea.value = `@${author} `;
+        textarea.focus();
+        
+        // 滚动到评论框
+        document.querySelector('.comment-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // 分类筛选功能
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // 移除所有按钮的 active 类
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 添加当前按钮的 active 类
+            button.classList.add('active');
+            
+            const category = button.dataset.category;
+            const books = document.querySelectorAll('.book-card');
+            
+            books.forEach(book => {
+                if (category === 'all' || book.dataset.category === category) {
+                    book.style.display = 'block';
+                    book.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // 查看更多功能
+    document.querySelector('.view-more-btn').addEventListener('click', function() {
+        this.innerHTML = '加载中... <span class="loading"></span>';
+        this.disabled = true;
+        
+        // 模拟加载更多书籍
+        setTimeout(() => {
+            this.innerHTML = '已显示全部推荐 <span class="check">✓</span>';
+        }, 1000);
+    });
+    </script>
+</body>
+</html> 
